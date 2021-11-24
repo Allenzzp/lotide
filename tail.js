@@ -1,9 +1,5 @@
 const tail = function(aArr) {
-  if (aArr.length > 0) {
-    return aArr.slice(1);
-  } else {
-    return [];
-  }
+  return aArr.slice(1);
 };
 
 const assertEqual = function(actual, expected) {
