@@ -6,15 +6,14 @@ const eqArrays = function(arr1, arr2) {
       }
     }
     return true;
-  } else {
-    return false;
   }
+  return false;
 };
 
 const assertArraysEqual = function(arr1, arr2) {
   let report;
   if (eqArrays(arr1, arr2)) {
-    report = `✅✅✅Assertion Passed: [${arr1}] === [${arr2}]`;
+    report = `✅✅✅Assertion Passed: ${arr1} === ${arr2}`;
   } else {
     report = `❌❌❌Assertion Failed: [${arr1}] !== [${arr2}]`;
   }
@@ -24,7 +23,7 @@ const assertArraysEqual = function(arr1, arr2) {
 const without = function(source, unwanted) {
   let remainedArray = [];
   for (let ele of source) {
-    if (unwanted.indexOf(ele) < 0) {
+    if (unwanted.indexOf(ele) < 0) {//modify to increase readibility
       remainedArray.push(ele);
     }
   }
@@ -32,9 +31,9 @@ const without = function(source, unwanted) {
 };
 
 // Test Cases
-// console.log(without([1, 2, 3], [1]));
-// console.log(without(["1", "2", "3"], [1, 2, "3"]));
+console.log(without([1, 2, 3], [1]));
+console.log(without(["1", "2", "3"], [1, 2, "3"]));
 
-// const words = ["hello", "world", "lighthouse"];
-// console.log(without(words, ["lighthouse"]));
-// assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+const words = ["hello", "world", "lighthouse"];
+console.log(without(words, ["lighthouse"]));
+assertArraysEqual(words, ["hello", "world", "lighthouse"]);

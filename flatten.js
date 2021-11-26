@@ -30,6 +30,7 @@ const flatElement = function(element, container) {
       flatElement(ele, container);
     }
   }
+  //return what consolog out
 };
 
 const flatten = function(nestArr) {
