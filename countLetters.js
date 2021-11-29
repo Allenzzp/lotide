@@ -22,7 +22,9 @@ const countLetters = function(str) {
 };
 
 // test cases
-let str1 = "LHL";
-let str2 = "lighthouse in the house";
-console.log(countLetters(str1));
-console.log(countLetters(str2));
+// let str1 = "LHL";
+// let str2 = "lighthouse in the house";
+// console.log(countLetters(str1));
+// console.log(countLetters(str2));
+
+module.exports = countLetters;
