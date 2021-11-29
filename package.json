@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@allenfuture/lotide",
   "version": "1.0.0",
-  "description": "my first project",
+  "description": "A mini clone of the [Lodash](https://lodash.com) library. This project was created and published by me as part of my learnings at Lighthouse Labs.",
   "main": "index.js",
   "directories": {
     "test": "test"
