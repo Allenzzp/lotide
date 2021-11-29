@@ -65,9 +65,9 @@ const assertObjectsEqual = function(actual, expected) {
 };
 
 // test cases
-const obj1 = {house: {location: "Van", size: 1900, home: {owner: "Allen", career: "web dev"}}, dog: true, name: "Alex"};
-const obj2 = {house: {location: "Van", size: 1900, home: {owner: "Allen", career: "web dev"}}, dog: true, name: "Alex"};
-const obj3 = {house: {location: "rmd", size: 1900, home: {owner: "Allen", career: "web designer"}}, dog: true, name: "Alex"};
+// const obj1 = {house: {location: "Van", size: 1900, home: {owner: "Allen", career: "web dev"}}, dog: true, name: "Alex"};
+// const obj2 = {house: {location: "Van", size: 1900, home: {owner: "Allen", career: "web dev"}}, dog: true, name: "Alex"};
+// const obj3 = {house: {location: "rmd", size: 1900, home: {owner: "Allen", career: "web designer"}}, dog: true, name: "Alex"};
 
 assertObjectsEqual(obj1, obj2);
 assertObjectsEqual(obj1, obj3);
